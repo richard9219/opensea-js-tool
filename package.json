@@ -1,0 +1,23 @@
+{
+    "name": "opensea-js-tool",
+    "version": "1.0.0",
+    "description": "",
+    "main": "order.js",
+    "dependencies": {
+        "opensea-js": "git+https://github.com/richard9219/opensea-js.git",
+        "ethers": "^5.7.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/richard9219/opensea-js.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/richard9219/issues"
+    },
+    "homepage": "https://github.com/richard9219#readme"
+}
