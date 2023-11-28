@@ -49,12 +49,12 @@ const takeOrder = async () => {
         apiBaseUrl: config.openseaBaseURL,
     });
 
-    const order = await openseaSDK.api.getOrder({ asset_contract_address: config.tokenAddress, tokenId: config.tokenId })
+    const order = await openseaSDK.api.getOrder({ side: "ask", assetContractAddress: config.tokenAddress, tokenId: config.tokenId })
     console.log("opensea-js-tool:takeOrder/getOrder order", order)
     const takeResp = await openseaSDK.fulfillOrder({
         order,
-        accountAddress: config.accountAddress,
-        recipientAddress: config.accountAddress,
+        accountAddress: config.buyAccountAddress,
+        recipientAddress: config.buyAccountAddress,
     })
     console.log("opensea-js-tool:takeOrder/take order", takeResp)
 }
